@@ -1,0 +1,23 @@
+#########1#########
+7
+6 Milka   4 Orbit   
+23.5
+Bananko   Orbit   
+
+#########2#########
+0
+3
+
+#########3#########
+9
+7
+
+#########4#########
+5 Dorina   6 Milka   1 Rumko   2 Kiki   4 Orbit   
+
+#########5#########
+55
+
+#########6#########
+Skup je prazan
+Bananko   Kiki   Orbit   

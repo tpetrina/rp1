@@ -1,0 +1,58 @@
+﻿<h2>Opis zadatka</h2>
+Napišite strukturu <b style="color: red;">Polinom</b> koja predstavlja polinom stupnja manjeg od 20. Koeficijenti polinoma su cijeli brojevi (int).
+Deklaraciju strukture spremite u datoteku <tt>polinom.h</tt>, a implementaciju u datoteku <tt>polinom.cpp</tt>.
+<h2>Konstruktori:</h2>
+<table cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr><td style="text-align: left;"><tt>Polinom()</tt></td><td>kreira nulpolinom</td></tr>
+<tr><td style="text-align: left;"><tt>Polinom(int a0)</tt></td><td>kreira konstantni polinom <i>p(x) = a0</i></td></tr>
+<tr><td style="text-align: left;"><tt>Polinom(int an, int n)</tt></td><td>kreira polinom <i>p(x) = an * x<sup>n</sup></i> (za n&gt;19 kreira nulpolinom) </td></tr>
+</tbody></table>
+<h2>Funkcije:</h2>
+<table cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr><td style="text-align: left;"><tt>int stupanj()</tt></td><td>vraća stupanj polinoma</td></tr>
+<tr><td style="text-align: left;"><tt>int koeficijent(int n)</tt></td><td>vraća koeficijent uz <i>x^n</i>. Ukoliko je stupanj polinoma manji od <tt>n</tt>, funkcija vraća <tt>0</tt>.</td></tr>
+<tr><td style="text-align: left;"><tt>int racunaj(int x)</tt></td><td>vraća vrijednost polinoma u točki <tt>x</tt></td></tr>
+<tr><td style="text-align: left;"><tt>void negativno()</tt></td><td>polinom pretvara u -polinom</td></tr>
+<tr><td style="text-align: left;"><tt>void dodaj(Polinom p)</tt></td><td>polinomu se dodaje polinom <tt>p</tt>. Ne treba paziti na mogućnost da koeficijenti "izlete" van granica tipa int.</td></tr>
+<tr><td style="text-align: left;"><tt>void mnozi(Polinom p)</tt></td><td>polinom se mnozi polinomom <tt>p</tt>.
+Ne treba paziti na mogućnost da koeficijenti "izlete" van granica tipa
+int. Ukoliko je rezultat polinom stupnja većeg od 19, monome stupnja
+većeg od 19 treba zanemariti.</td></tr>
+<tr><td style="text-align: left;"><tt>void copy(Polinom p)</tt></td><td>polinom = <tt>p</tt>, tj. prekopira p u polinom koji je pozvao funkciju</td></tr>
+<tr><td style="text-align: left;"><tt>int isEqual(Polinom p)</tt></td><td>provjerava da li je polinom jednak polinomu <tt>p</tt>; vraća 1 ako je, 0 ako nije</td></tr>
+</tbody></table>
+<br><br>
+<b style="color: red;">Oprez:</b>
+<ul>
+	<li><b style="color: red;">struktura i funkcije MORAJU se zvati točno kako gore piše. Pazite na velika i mala slova!</b></li>
+	<li>vi trebate poslati <b style="color: red;">samo</b> datoteke <tt>polinom.h</tt> i <tt>polinom.cpp</tt> </li>
+	<li>u njima se <b style="color: red;">ne smije nalaziti</b> funkcija <tt>main()</tt></li>
+	<li>također, niti jedna od funkcija koju napišete <b style="color: red;">ne smije</b> ništa učitavati niti ispisivati na ekran ili datoteku!!!</li>
+</ul>
+<br>
+Ispravnost vašeg programa će biti provjerena tako da ćemo mi napisati razne <tt>main.cpp</tt> programe koji će kreirati varijable tipa
+Polinom i pozivati funkcije koje ste vi napravili.
+Ako se vaše datoteke ne budu uspješno "linkale" sa našim klijentskim programom, vaše rješenje će se smatrati neispravnim.
+<br><br>
+Naravno, da provjerite da li vaš program radi prije nego ga pošaljete,
+također ga trebate istestirati pomoću nekakvog klijentskog
+programa. Slijedi primjer jednog takvog (ako vaša struktura Polinom
+radi sa donjim <tt>main.cpp</tt>, to nije jamstvo da će raditi i
+nekim drugim, na primjer prilikom ocjenjivanja!)
+
+<tr><td class="content" valign="top">Napomene:
+	<ul>
+		<li>morate odabrati svaku od gornjih datoteka i tek onda kliknuti na "Pošalji rješenja!"</li>
+		<li>svaka od datoteka smije imati najviše 10kB</li>
+		<li>nakon uspješnog slanja dobit ćete odgovarajuću poruku; u protivnom će se ponovno prikazati ova stranica</li>
+		<li>svoja rješenja smijete (uspješno) poslati još maksimalno 3 puta! Neuspješna slanja se ne broje.</li>
+		<li>ako rješenje šaljete više puta, <b>prethodno poslana se gube!</b></li>
+	</ul>
+
+	      </td>
+    </tr>
+
+    <tr>
+      <!-- ******************* datum zadnje promjene ********************************** -->
+      <td class="menu" width="150"></td>
+      <td class="content" style="text-align: center; font-size: 7pt;"></td></tr>

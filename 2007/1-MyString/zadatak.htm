@@ -1,0 +1,50 @@
+﻿<h1>1. zadaća</h1>
+<h2>Opis zadatka</h2>
+Napišite strukturu <b style="color: red;">MyString</b> koja predstavlja string duljine manje od 100.
+Deklaraciju strukture spremite u datoteku <tt>MyString.h</tt>, a implementaciju u datoteku <tt>MyString.cpp</tt>.<br>
+Uputa: vaša struktura treba kao element imati najobičniji C-ovski string duljine 100, poanta je da ispravno napišete
+funkcije članice.<br>
+<h2>Konstruktori:</h2>
+<table cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr><td style="text-align: left;"><tt>MyString()</tt></td><td>kreira prazan string</td></tr>
+<tr><td style="text-align: left;"><tt>MyString(char *str)</tt></td><td>kreira string koji je jednak C-ovskom stringu <tt>str</tt></td></tr>
+<tr><td style="text-align: left;"><tt>MyString(int n, char ch)</tt></td><td>kreira string koji se sastoji od n znakova <tt>ch</tt> (ako je n&gt;99, onda kreira prazan string)</td></tr>
+</tbody></table>
+<h2>Funkcije:</h2>
+<table cellpadding="5" cellspacing="0" width="95%">
+<tbody><tr><td style="text-align: left;"><tt>int size()</tt></td><td>vraća duljinu stringa</td></tr>
+<tr><td style="text-align: left;"><tt>char character(int n)</tt></td><td>vraća n-ti znak stringa (tj. onaj na indexu n; pretpostavite da je n uvijek manji od duljine stringa)</td></tr>
+<tr><td style="text-align: left;"><tt>void append(MyString p)</tt></td><td>stringu koji poziva ovu funkciju se na kraj zalijepi string p</td></tr>
+<tr><td style="text-align: left;"><tt>void ispisi()</tt></td><td>ispisuje string (<b style="color: red;">bez ikakvih dodatnih poruka ili prelaska u novi red</b>)</td></tr>
+<tr><td style="text-align: left;"><tt>void copy(char *str)</tt></td><td>kopira C-ovski string str u string koji je pozvao ovu funkciju</td></tr>
+<tr><td style="text-align: left;"><tt>void erase(int n, int q)</tt></td><td>briše q znakova stringa, počevši od znaka sa indexom n (pretpostavite da se sve odvija unutar granica stringa)</td></tr>
+<tr><td style="text-align: left;"><tt>int isEqual(MyString p)</tt></td><td>provjerava da li je string jednak stringu <tt>p</tt>; vraća 1 ako je, 0 ako nije</td></tr>
+</tbody></table>
+<br><br>
+<b style="color: red;">Oprez:</b>
+<ul>
+	<li><b style="color: red;">struktura i funkcije MORAJU se zvati točno kako gore piše. Pazite na velika i mala slova!</b></li>
+	<li>vi trebate poslati <b style="color: red;">samo</b> datoteke <tt>MyString.h</tt> i <tt>MyString.cpp</tt> </li>
+	<li>u njima se <b style="color: red;">ne smije nalaziti</b> funkcija <tt>main()</tt></li>
+	<li>također, niti jedna od funkcija (osim copy) koju napišete <b style="color: red;">ne smije</b> ništa učitavati niti ispisivati na ekran ili datoteku!!!</li>
+</ul>
+<br>
+Ispravnost vašeg programa će biti provjerena tako da ćemo mi napisati razne <tt>main.cpp</tt> programe koji će kreirati varijable tipa
+MyString i pozivati funkcije koje ste vi napravili.
+Ako se vaše datoteke ne budu uspješno "linkale" sa našim klijentskim programom, vaše rješenje će se smatrati neispravnim.
+<br><br>
+Naravno, da provjerite da li vaš program radi prije nego ga pošaljete,
+također ga trebate istestirati pomoću nekakvog klijentskog
+programa. Slijedi primjer jednog takvog (ako vaša struktura MyString
+radi sa donjim <tt>main.cpp</tt>, to nije jamstvo da će raditi i
+nekim drugim, na primjer prilikom ocjenjivanja!)
+
+
+	<br><br>
+	Napomene:
+	<ul>
+		<li>morate odabrati svaku od gornjih datoteka i tek onda kliknuti na "Pošalji rješenja!"</li>
+		<li>svaka od datoteka smije imati najviše 10kB</li>
+		<li>nakon uspješnog slanja dobit ćete odgovarajuću poruku; u protivnom će se ponovno prikazati ova stranica</li>
+		<li>svoja rješenja smijete (uspješno) poslati još maksimalno 3 puta! Neuspješna slanja se ne broje.</li>
+		<li>ako rješenje šaljete više puta, <b>prethodno poslana se gube!</b></li></ul>
